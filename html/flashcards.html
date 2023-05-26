@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+    <link rel="stylesheet" href="../css/flashcards.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Keita</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item">
+                    <a href="tests.html" class="navbar__links">Tests</a></li>
+                <li class="navbar__item">
+                    <a href="travel.html" class="navbar__links">Flashcards</a></li>
+                <li class="navbar__btn">
+                    <a href="loginPage.html" class="button" onclick="login()" >Sign Up/ Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Flashcards-->
+    <div class="container">
+        <div class="nav">
+            <h1>Flashcards</h1>
+            <div>
+                <button onclick="showCreateCardBox()">New Card</button>
+                <button onclick="delFlashcards()">Del Cards</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="create-box">
+            <h2>Create Flashcard</h2>
+            <label for="question">Question</label>
+            <textarea id="question" ></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer" ></textarea>
+            <button onclick="addFlashcard()">Save</button>
+            <button onclick="hideCreateBox()">Close</button>
+        </div>
+        <div class="flashcards"></div>
+    </div>
+        <!-----Footer Section-->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About Me</h2>
+                        <a href="index.html#Who am I">Who am I</a>
+                        <a href="index.html#reviews">Reviews</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Resources</h2>
+                        <a href="tests.html">Tests</a>
+                        <a href="flashcards.html">Flashcards</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Contact</h2>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="index.html" id="footer__logo">Keita</a>
+                    </div>
+                    <p class="website__rights">© Keita 2023 All rights reerved</p>
+                    <div class="social__icons">
+                        <a href="https://www.linkedin.com/in/keita-bacon-32081b231/" class="social__icon--link" target=""_blank>
+                            Linkedin
+                        </a>
+                        <a href="https://github.com/keitabacon" class="social__icon--link" target=""_blank>
+                            Github
+                        </a>
+                        <a href="https://www.fiverr.com/keitabacon?up_rollout=true" class="social__icon--link" target=""_blank>
+                            Fiverr
+                        </a>
+                    </div>
+                </div>
+            </div>
+           </div>
+    
+    <script src="../js/flashcard.js"></script>
+</body>
+</html>

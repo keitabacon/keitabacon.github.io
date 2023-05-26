@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kanji</title>
+    <link rel="stylesheet" href="../../css/test.css">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="navbar__container">
+                <a href="../index.html" id="navbar__logo">Keita</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__links">Home</a></li>
+                    <li class="navbar__item">
+                        <a href="../tests.html" class="navbar__links">Tests</a></li>
+                    <li class="navbar__item">
+                        <a href="../travel.html" class="navbar__links">Flashcards</a></li>
+                    <li class="navbar__btn">
+                        <a href="../loginPage.html" class="button" onclick="login()" >Sign Up/ Log In</a></li>
+                </ul>
+            </div>
+    </nav>
+
+
+
+        <!----Instruction Section-->
+
+        <div class="Instructions__container">
+            <div class="classIntructions__wrapper">
+            <div class="title">
+                <h1 id="title">Kanji Test Instructions</h1>
+            </div>
+            <div class="inst">
+                <p id="paragraph">A random kanji will show up on your screen. In the box below enter the reading in romaji (English) and press submit.ex: あ = a<br> Finish your test to get your full score!</p>
+            </div>
+            <div class="startbutton">
+                <button id="start" class="tbutton" onclick="start()">start</button><button class="tbutton" id="restart"><a href="hiraganaTest.html">restart</a></button>
+            </div>
+            </div>
+        </div>
+            
+
+        <!----Test Section-->
+            
+        <div class="test__container" id="test">
+            <div class="test__form">
+                <div class="hiragana">
+                    <label for="title"><h1>Enter The Reading:</h1></label>
+                    <h2 id="TG"></h2>
+                    <div class="input">
+                    <input type="text" id="answer">
+                    <button class="tbutton" id="submit" onclick="submit()">Submit</button>
+                    </div>
+                    <div id="result">
+                    <p>Result</p>
+                    </div>  
+                    <div class="nextbutton">
+                    <button class="tbutton" id="next" onclick="next()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!-----Footer Section-->
+     <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Me</h2>
+                    <a href="../index.html#Who am I">Who am I</a>
+                    <a href="../index.html#reviews">Reviews</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Resources</h2>
+                    <a href="../tests.html">Tests</a>
+                    <a href="../flashcards.html">Flashcards</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact</h2>
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="../index.html" id="footer__logo">Keita</a>
+                </div>
+                <p class="website__rights">© Keita 2023 All rights reerved</p>
+                <div class="social__icons">
+                    <a href="https://www.linkedin.com/in/keita-bacon-32081b231/" class="social__icon--link" target=""_blank>
+                        Linkedin
+                    </a>
+                    <a href="https://github.com/keitabacon" class="social__icon--link" target=""_blank>
+                        Github
+                    </a>
+                    <a href="https://www.fiverr.com/keitabacon?up_rollout=true" class="social__icon--link" target=""_blank>
+                        Fiverr
+                    </a>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    <script src="../../js/tests/kanji.js"></script>
+</body>
+</html>

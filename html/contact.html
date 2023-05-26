@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Keita</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item">
+                    <a href="tests.html" class="navbar__links">Tests</a></li>
+                <li class="navbar__item">
+                    <a href="flashcards.html" class="navbar__links">Flashcards</a></li>
+                <li class="navbar__btn">
+                    <a href="loginPage.html" class="button" onclick="login()" >Sign Up/ Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+<!--contact-->
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="button" value="Submit">
+  
+    </form>
+  </div>
+
+       <!-----Footer Section-->
+       <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Me</h2>
+                    <a href="#Who am I">Who am I</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Resources</h2>
+                    <a href="tests.html">Tests</a>
+                    <a href="flashcards.html">Flashcards</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact</h2>
+                    <a href="/">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="index.html" id="footer__logo">Keita</a>
+                </div>
+                <p class="website__rights">© Keita 2023 All rights reerved</p>
+                <div class="social__icons">
+                    <a href="https://www.linkedin.com/in/keita-bacon-32081b231/" class="social__icon--link" target=""_blank>
+                        Linkedin
+                    </a>
+                    <a href="https://github.com/keitabacon" class="social__icon--link" target=""_blank>
+                        Github
+                    </a>
+                    <a href="https://www.fiverr.com/keitabacon?up_rollout=true" class="social__icon--link" target=""_blank>
+                        Fiverr
+                    </a>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
