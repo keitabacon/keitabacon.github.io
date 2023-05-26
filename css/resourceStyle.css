@@ -231,6 +231,9 @@ body{
     position: relative;
     color: black;
 }
+.services__card a {
+    color: black;
+}
 .services__card a:visited{
     color:black;
 }
