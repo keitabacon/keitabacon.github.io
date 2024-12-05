@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Developer Profile</title>
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <header>
-    <h1>Welcome to [Your Name]'s Portfolio</h1>
-    <p>Aspiring Web Developer | HTML | CSS | JavaScript</p>
-  </header>
+    <h1>Welcome to Keita Bacon's Portfolio</h1>
+    <p>Recent Graduate from the University of Oregon. Interested in Web Development, IT, Data Analysis.</p>
+    <p>HTML | CSS | Python | JavaScript | TypeScript | React | Node.js | SQL | MySQL | Git/GitHub | Power BI | Excel</p>
+    <div id="social-links">
+        <a href="https://linkedin.com/in/keita-bacon" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/keitabacon" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</header>
 
   <main>
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I'm [Your Name], an aspiring web developer passionate about building clean and user-friendly websites.</p>
-    </section>
+      <button class="dropdown-btn">Expand</button>
+      <p>Hello! I'm Keita,</p>
+      <img src="/soccer.JPG" alt="Keita Playing Soccer">
+      <img src="/coaching.jpg" alt="Keita Coaching">
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-card">
-        <h3>Project 1: Portfolio Website</h3>
-        <p>A responsive portfolio site showcasing my projects.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 2: To-Do App</h3>
-        <p>A simple to-do list application with local storage.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 3: Weather App</h3>
-        <p>A weather app that fetches real-time data using an API.</p>
-        <a href="#">View Project</a>
-      </div>
-    </section>
+      <!-- Web Dev Projects Section -->
+      <section id="projects">
+        <h2>My Web Dev Projects</h2>
+        <button class="dropdown-btn">Expand</button>
+        <div class="project-card">
+          <h3>PeoplesNotebook.com</h3>
+          <p>Collaborated with a team to develop a fully functional web application for guided reflections. The website
+            is built with a Next.js React framework, a Node.js RESTful API on the Fastify framework, and a MySQL
+            database. The platform was fully hosted on AWS using Amplify, EC2, and RDS. We worked closely with IPs, DNS,
+            and SSL certificates to host the site on a secured server.</p>
+          <a href="https://PeoplesNotebook.com">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Oregon Software Consulting Club: Alumni Tracker Database</h3>
+          <p>
+            Led a team of 3 in the creation of the Oregon Software Consulting Club’s Alumni Database Tracker. Our team
+            used TypeScript, Node.js, Next.js, and TailWind CSS to construct a generally applicable database tracker. We
+            worked on making the product as efficient and applicable as possible. Allowing the club to market this
+            software for our future clients and ease the club’s work in the future.</p>
+          <a href="https://github.com/OregonSoftwareConsulting/at-interface">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Relevant Classes</h3>
+          <p>CIT:Web Develpment 1,CIT:Web Develpment 2,CIT:Database Management</p>
+        </div>
+      </section>
+      <img src="/EWEB.jpg" alt="Keita EWEB">
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>My Data Analysis Projects</h2>
+        <button class="dropdown-btn">Expand</button>
+        <div class="project-card">
+          <h3>EWEB</h3>
+          <p>Managed day-to-day operations proficiently utilizing Microsoft Office 365 applications. Developed a Power BI dashboard that displays electricity usage throughout the day reducing time-consuming
+            questions to the power planning division by half.</p>
+          <img src="/powerbi.png" alt="Powerbi visual">
+        </div>
+        <div class="project-card">
+          <h3>Power Bi Microcredential
+          </h3>
+          <p>
+           Received a Microsoft Power Bi credential from the Lundquist School of Business at UO</p>
+          <img src="/powerbi cred.jpeg" alt="credential">
+        </div>
+        <div class="project-card">
+          <h3>Relevant Classes</h3>
+          <p>BA201:Working with excel, DS101:Data Science Fundamentals, MATH283: Stats, PS471:Using data to make logical conclusions</p>
+        </div>
+      </section>
+       <!-- Projects Section -->
+       <section id="projects">
+        <h2>IT Projects</h2>
+        <button class="dropdown-btn">Expand</button>
+        <div class="project-card">
+          <h3>Home</h3>
+          <p>Built and maintained two computers and switched my home network into a mesh network. Currently working on getting Comptia A+ Certificate.</p>
+        </div>
+        <div class="project-card">
+          <h3>Web Dev</h3>
+          <p>Worked on hosting sites on AWS closely working with IP's and HTTPS Certificates. Created and maintained API's and sending/requesting JSON Data.</p>
+        </div>
+        <div class="project-card">
+          <h3>Relevant Classes</h3>
+          <p>CS110:Information Technology, CIT383: Networking Fundamentals</p>
+        </div>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2024 Keita Bacon. All rights reserved.</p>
   </footer>
 
   <script src="scripts.js"></script>
 </body>
+
 </html>
