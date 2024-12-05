@@ -4,12 +4,12 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #eef2f7;
+  background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
   color: #333;
 }
 
 header {
-  background: #007BFF;
+  background: linear-gradient(to right, #a3c9f1, #add8e6);
   color: #fff;
   padding: 20px 10px;
   text-align: center;
@@ -29,21 +29,36 @@ main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 30px;
-}
-img{
-  width: 33vw;
-  height: 100%;
+button{
+  border-radius: 20px;
+  border: solid #add8e6;
 }
 
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+img{
+  width: 49%; 
+  height: auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.banner{
+  font-size: 2em;
+  text-align: center;
+  font-weight: 600;
+}
 .project-card {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  overflow: hidden;
+  margin: 10px;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -52,7 +67,7 @@ img{
 }
 
 .project-card h3 {
-  background: #007BFF;
+  background: #add8e6;
   color: #fff;
   padding: 10px;
   margin: 0;
@@ -60,19 +75,26 @@ img{
 }
 
 .project-card p {
-  padding: 15px;
+  padding: 5px;
   font-size: 0.9rem;
 }
 
 .project-card img {
-  width: 100%;
+  width: 75%;
   height: auto;
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #add8e6;
+  margin: 10px;
+  
 }
 
 footer {
   text-align: center;
-  background: #333;
-  color: #fff;
   padding: 10px 0;
 }
 
@@ -91,4 +113,44 @@ footer {
 
 #social-links a:hover {
   color: #ffcd39;
+}
+
+#web{
+  display: none;
+  flex-direction: column;
+}
+#data{
+  display: none;
+  flex-direction: column;
+}
+#IT{
+  display: none;
+  flex-direction: column;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.about_wrapper{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project_wrapper{
+  width: 50vw;
+
+}
+
+@media screen and (max-width:630px) {
+  .wrapper{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    width: 100%;
+  }
 }
