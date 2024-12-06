@@ -4,10 +4,9 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+  background: white;
   color: #333;
 }
-
 header {
   background: linear-gradient(to right, #a3c9f1, #add8e6);
   color: #fff;
@@ -32,6 +31,7 @@ main {
 button{
   border-radius: 20px;
   border: solid #add8e6;
+  background-color: white;
 }
 
 section {
@@ -90,7 +90,6 @@ a{
   border-radius: 20px;
   border: solid #add8e6;
   margin: 10px;
-  
 }
 
 footer {
@@ -149,11 +148,20 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   img{
     width: 100%;
   }
   main{
+    padding: 0px;
+    width: 100%;
+    
+  }
+  .project-card{
+      margin:2px;
+  }
+  section{
     padding: 0px;
   }
 }
