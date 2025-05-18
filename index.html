@@ -3,180 +3,324 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keita Bacon Profile</title>
-    <link rel="stylesheet" href="index.css" />
-
+    <title>Keita Bacon | Full-Stack Developer</title>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+      a:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        color: #1a1a1a;
+        line-height: 1.6;
+      }
+      .highlight {
+        background-color: #e8f1ff;
+        padding: 30px;
+        border-left: 8px solid #3a7bd5;
+        border-radius: 10px;
+      }
+
+      header {
+        background-color: #14213d;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        color: #555;
+      }
+
+      .status {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 10px 20px;
+        background: #d4f4e6;
+        color: #025c38;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .social a {
+        color: #14213d;
+        font-size: 1.4rem;
+      }
+
+      main {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h3 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: #14213d;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .card strong {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .images-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .images-row img {
+        width: calc(50% - 10px);
+        border-radius: 8px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        background: #eee;
+      }
+    </style>
   </head>
 
   <body>
     <header>
-      <h1>Welcome to Keita Bacon's Portfolio</h1>
-      <p>
-        <strong>
-          HTML | CSS | Python | JavaScript | TypeScript | React | Node.js | SQL
-          | MySQL | Git/GitHub | Power BI | Excel</strong
-        >
-      </p>
-      <div id="social-links">
-        <a href="https://linkedin.com/in/keita-bacon" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/keitabacon" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <p>keitabacon@gmail.com</p>
-      </div>
+      <h1>Keita Bacon</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#web">Web Dev</a>
+        <a href="#data">Data</a>
+        <a href="#it">IT</a>
+        <a href="#employment">Employment</a>
+      </nav>
     </header>
-    <div class="banner">Currently open to all inquires</div>
+
+    <section class="hero">
+      <h2>Welcome to My Portfolio!</h2>
+      <p>
+        HTML | CSS | Python | JavaScript | TypeScript | React | Node.js | SQL |
+        Git/GitHub | Power BI
+      </p>
+      <div class="status">Currently open to all inquiries</div>
+      <div class="social">
+        <a href="https://linkedin.com/in/keita-bacon" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/keitabacon" target="_blank">GitHub</a>
+        <a href="mailto:keitabacon@gmail.com">Email</a>
+      </div>
+    </section>
 
     <main>
-      <div class="wrapper">
-        <div class="project_wrapper">
-          <!-- About Section -->
+      <section id="about">
+        <h3>About Me</h3>
+        <p>
+          I am a masters student at Portland State University, looking for
+          opportunities in Full-Stack Development. When I'm not coding, you can
+          find me coaching soccer, hiking, fishing, or snowboarding around
+          Oregon.
+        </p>
+        <div class="images-row">
+          <img src="/Fishing.JPG" alt="Keita fishing" />
+          <img src="/coaching.jpg" alt="Keita coaching" />
+        </div>
+      </section>
 
-          <!-- Web Dev Projects Section -->
-          <h2>Web Dev Projects</h2>
-          <button id="webb" onclick="toggleDrop('web','webb')">Expand</button>
-          <section id="web">
-            <div class="project-card">
-              <h3>PeoplesNotebook.com</h3>
-              <p>
-                Collaborated with a team to develop a fully functional web
-                application for guided reflections. The website is built with a
-                <strong>Next.js React framework(JavaScript)</strong>, a <strong>Node.js RESTful API</strong> on the Fastify
-                framework, and a <strong>MySQL</strong> database. The platform was fully hosted
-                on <strong>AWS</strong> using <strong>Amplify</strong>, <strong>EC2</strong>, and <strong>RDS</strong>. We worked closely with <strong>IPs</strong>,
-                <strong>DNS</strong>, and <strong>SSL</strong> certificates to host the site on a secured server.
-              </p>
-              <a href="https://PeoplesNotebook.com">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>NX1</h3>
-              <p>
-                A website for athletes seeking local businesses to support them through NIL deals. Similarly the website is built with a
-                <strong>Next.js React framework(TypeScript)</strong>, a <strong>Node.js RESTful API</strong> on the Fastify
-                framework, and a <strong>MySQL</strong> database. The platform was fully hosted
-                on <strong>AWS</strong> using <strong>Amplify</strong>, <strong>EC2</strong>, and <strong>RDS</strong>. We worked closely with <strong>IPs</strong>,
-                <strong>DNS</strong>, and <strong>SSL</strong> certificates to host the site on a secured server.
-              </p>
-              <a href="https://dev-1-0.d2nvzmdl165xo9.amplifyapp.com/">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Oregon Software Consulting Club: Alumni Tracker Database</h3>
-              <p>
-                Led a team of 3 in the creation of the Oregon Software
-                Consulting Club’s Alumni Database Tracker. Our team used
-                <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Next.js</strong>, and <strong>TailWind CSS</strong> to construct a
-                generally applicable database tracker. We worked on making the
-                product as efficient and applicable as possible. Allowing the
-                club to market this software for our future clients and ease the
-                club’s work in the future.
-              </p>
-              <a href="https://github.com/OregonSoftwareConsulting/at-interface"
-                >View Project</a
-              >
-            </div>
-            <div class="project-card">
-              <h3>Relevant Classes</h3>
-              <p>
-                CIT:Web Develpment 1,CIT:Web Develpment 2,CIT:Database
-                Management
-              </p>
-            </div>
-          </section>
-          <!-- Projects Section -->
-          <h2>Data Analysis Projects</h2>
-          <button id="datab" onclick="toggleDrop('data','datab')">
-            Expand
-          </button>
-          <section id="data">
-            <div class="project-card">
-              <h3>EWEB</h3>
-              <p>
-                Managed day-to-day operations proficiently utilizing <strong>Microsoft
-                Office 365</strong> applications. Developed a <strong>Power BI </strong>dashboard that
-                displays electricity usage throughout the day reducing
-                time-consuming questions to the power planning division by half.
-              </p>
-              <img src="/powerbi.png" alt="Powerbi visual" />
-            </div>
-            <div class="project-card">
-              <h3>Power Bi Microcredential</h3>
-              <p>
-                Received a <strong>Microsoft Power Bi</strong> credential from the Lundquist
-                School of Business at UO
-              </p>
-              <img src="/powerbi cred.jpeg" alt="credential" />
-            </div>
-            <div class="project-card">
-              <h3>Relevant Classes</h3>
-              <p>
-                BA201:Working with excel, DS101:Data Science Fundamentals,
-                MATH283: Stats, PS471:Using data to make logical conclusions
-              </p>
-            </div>
-          </section>
-          <!-- Projects Section -->
-          <h2>IT Projects</h2>
-          <button id="ITb" onclick="toggleDrop('IT','ITb')">Expand</button>
-          <section id="IT">
-            <div class="project-card">
-              <h3>Home</h3>
-              <p>
-                Built and maintained two computers and switched my home network
-                into a mesh network. Currently working on getting <strong>Comptia A+
-                Certificate</strong>.
-              </p>
-            </div>
-            <div class="project-card">
-              <h3>Web Dev</h3>
-              <p>
-                Worked on hosting sites on <strong>AWS</strong> closely working with <strong>IP's</strong>,
-                <strong>HTTPS</strong>, and <strong>Route 53</strong>. Created and maintained <strong>API's</strong> and
-                sending/requesting <strong>JSON</strong> Data.
-              </p>
-            </div>
-            <div class="project-card">
-              <h3>Relevant Classes</h3>
-              <p>
-                CS110:Information Technology, CIT383: Networking Fundamentals
-              </p>
-            </div>
-          </section>
-        </div>
-        <div class="about_wrapper">
-          <h2>About Me</h2>
-          <section id="about">
-            <p>Hello! I'm Keita</p>
-            <img src="/EWEB.jpg" alt="Keita EWEB" />
-            <img src="/Fishing.JPG" alt="Keita Fishing" />
+      <section id="web" class="highlight">
+        <h3>Full-Stack/Web Dev Projects</h3>
+        <div class="card-grid">
+          <div class="card">
+            <h4>PeoplesNotebook.com</h4>
             <p>
-              I am a recent graduate from the University of Oregon, looking for
-              opportunities in Web Development, Data Analysis, and IT. When I am
-              not at my computer you can find me on the soccer field coaching
-              and playing. Born and raised in Oregon I always find time to
-              experience nature through fishing, hiking, and snowboarding.
+              Full-stack platform using Next.js, Fastify(node.js), MySQL, and
+              AWS.
             </p>
-            <img src="/coaching.jpg" alt="Keita Coaching" />
-            <img src="/soccer.JPG" alt="Keita soccer" />
-            <h3>Whats Next?</h3>
+            <a target="_blank" href="https://PeoplesNotebook.com"
+              >View Project</a
+            >
+          </div>
+          <div class="card">
+            <h4>NX1</h4>
             <p>
-              Accepted into multiple masters and post-bac programs for computer
-              science and data science. Looking to work on my golf game.
+              NIL deal marketplace for athletes. Built with TypeScript, Node.js
+              API, hosted on AWS.
             </p>
-          </section>
+            <a target="_blank" href="https://nx1connect.com">View Project</a>
+          </div>
+          <div class="card">
+            <h4>SloanMay</h4>
+            <p>
+              Produced a public facing website and a custom admin CRM for a
+              client with Next.js and NeonDB hosted on Vercel
+            </p>
+            <a target="_blank" href="https://sloanmay.com">View Project</a>
+          </div>
+          <div class="card">
+            <h4>StemBridgeBeams</h4>
+            <p>Produced a public facing website with Wordpress for a client.</p>
+            <a target="_blank" href="https://stembridgebeams.com"
+              >View Project</a
+            >
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section id="employment">
+        <h3>Relevant Employment</h3>
+        <div class="card-grid">
+          <div class="card">
+            <h4>QA Analyst - PLUSQA (Part-Time)</h4>
+            <p>
+              Mar 2025 – Present<br />Ensured cross-platform functionality and
+              seamless user experience by executing test cases on macOS,
+              Windows, iOS, and Android, collaborating with developers to
+              identify and resolve bugs. Applied accessibility (A11y) best
+              practices to test websites and apps, assessing them against WCAG
+              guidelines and providing detailed reports on accessibility issues
+              for remediation. Performed Japanese localization testing, ensuring
+              proper Japanese translation for elements on website.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Computer Science 111 Learning Assistant - UO</h4>
+            <p>
+              2023 – 2024<br />Fostered a friendly learning environment by
+              hosting office hours, attending lab sessions, and effectively
+              teaching HTML, CSS, and JS to over 200 students. Provided
+              live-time code debugging sessions, offering clear explanations to
+              students and facilitating better comprehension. Strengthened
+              foundational understanding of JavaScript through continuous
+              reflection and relearning, facilitating smoother acquisition of
+              React and Node.js knowledge.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Continuous Improvement Internship - EWEB</h4>
+            <p>
+              2024<br />Implemented continuous improvement methods, resolving
+              real-world issues using Plan-Do-Check-Act. Managed day-to-day
+              operations using Microsoft Office 365 applications.Developed
+              leadership and project management skills through U of O leadership
+              workshops.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="data">
+        <h3>Data Analysis Projects</h3>
+        <div class="card-grid">
+          <div class="card">
+            <h4>EWEB Dashboard</h4>
+            <p>
+              Reduced manual analysis time by 50% using Power BI with daily
+              electricity usage insights.
+            </p>
+            <img
+              src="/powerbi.png"
+              alt="Power BI dashboard"
+              style="width: 50%; border-radius: 5px; margin-top: 10px"
+            />
+          </div>
+          <div class="card">
+            <h4>Power BI Microcredential</h4>
+            <p>
+              Earned from UO’s Lundquist School of Business demonstrating Power
+              BI proficiency.
+            </p>
+            <img
+              src="/powerbi cred.jpeg"
+              alt="Power BI credential badge"
+              style="width: 50%; border-radius: 5px; margin-top: 10px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="it">
+        <h3>IT Projects</h3>
+        <div class="card-grid">
+          <div class="card">
+            <h4>Home Lab</h4>
+            <p>
+              Built PCs, migrated network to mesh, and studying for CompTIA A+
+              Certification.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Server Hosting</h4>
+            <p>
+              Set up secured API and static hosting on AWS EC2 with SSL and
+              Route 53 integration.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Keita Bacon. All rights reserved.</p>
+      <p>&copy; 2025 Keita Bacon. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
   </body>
 </html>
